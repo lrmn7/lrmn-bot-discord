@@ -1,0 +1,55 @@
+name-template: 'v$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
+template: |
+  <h3 align="center">
+
+  ![](https://visitor-badge.laobi.icu/badge?page_id=lrmn7.lrmn7&) [![Twitter Follow](https://img.shields.io/twitter/follow/romanromannya?label=Follow)](https://twitter.com/intent/follow?screen_name=romanromannya) [![GitHub followers](https://img.shields.io/github/followers/lrmn7derf?label=Follow&style=social)](https://github.com/lrmn7) [![discord](https://img.shields.io/badge/Join_Discord-5865F2.svg?&style=flat-square&logo=discord&logoColor=white&link=https://discord.gg/WFfjrQxnfH)](https://discord.gg/WFfjrQxnfH) [![youtube](https://img.shields.io/youtube/channel/subscribers/UC3yqDQ62iwvmQBrvy4WzFhQ?style=social)](https://www.youtube.com/channel/UC3yqDQ62iwvmQBrvy4WzFhQ) [![youtube](https://img.shields.io/twitch/status/lrmn_vp?style=social)](https://www.twitch.tv/lrmn_vp)
+  [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/LRMN)
+  
+  [![Discord Bot RELEASE CI/CD](https://github.com/lrmn7/lrmn-bot/actions/workflows/Discord-Bot_Release_docker-image.yml/badge.svg)](https://github.com/lrmn/lrmn-bot/actions/workflows/Discord-Bot_Release_docker-image.yml)
+  
+  </h3>
+  
+  ## 🧰 Technologies & Tools used for this project
+  
+  ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+  
+  
+  ## What's Changed
+
+  $CHANGES
+
+categories:
+  - title: '✨ Introduce new features.'
+    label:
+      - 'feature'
+  - title: '🐛 Bug fix'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: '⚡️ Performances Improve'
+    labels:
+      - '⚡️'
+      - 'improve'
+      - 'performances'
+  - title: '🎨 Improve structure / format of the code'
+    labels:
+      - 'structure'
+  - title: '🧰 Maintenance'
+    labels:
+      - 'maintenance'
+      - 'chore'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
