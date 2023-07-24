@@ -1,12 +1,16 @@
 FROM node:18-slim
 
+USER root
+
+RUN apt-get update && apt-get install -y python3 make g++ --fix-missing
+
+USER node
+
 WORKDIR /app/
 
 COPY package*.json ./
 
 RUN npm install
-
-RUN apt-get update && apt-get install -y fontconfig
 
 COPY . .
 

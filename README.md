@@ -27,6 +27,17 @@
 
 - The discord bot have this own documentation can be found here : https://github.com/lrmn7/lrmn-bot/wiki
 
+### 🐳 Docker
+
+available:
+- `lrmn/lrmn:latest`: latest versions
+
+(Replace empty config strings with correct values.)
+
+```bash
+docker run -d -p 8080:8080 -e YOUTUBE_CHANNEL_ID01=YOUR_YOUTUBE_CHANNEL_ID -e DATABASE_TOKEN=YOUR_MONGODB_DATABASE_TOKEN -e CLIENT_ID=YOUR_DISCORD_CLIENT_ID -e BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN lrmn/lrmn:latest
+```
+
 ## 🗺️ RoadMap :
   - [X] Essential moderation command *(kick,timeout,ban,clear)*
   - [X] Talking as bot
